@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><meta charset="utf-8"><title>Citizen Tech Shop</title></head>
+<body style="font-family:Arial;background:#111;color:#fff">
+  <h1 style="color:#ED145B">Citizen Tech Shop</h1>
+  <!-- [VULN] XSS: variavel renderizada sem escape (|safe) -->
+  <p>Bem-vindo(a), {{ nome|safe }}!</p>
+  <p>Loja oficial de servicos ao cidadao (ambiente de treino DevSecOps).</p>
+</body>
+</html>
